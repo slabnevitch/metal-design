@@ -240,7 +240,7 @@ jQuery(function() {
 					delegate: '.slick-active .from-photo-popup',
 					type: 'image',
 					tLoading: 'Loading image #%curr%...',
-					mainClass: 'mfp-img-mobile static-gallery-popup',
+					mainClass: 'mfp-img-mobile',
 					gallery: {
 						enabled: true,
 						navigateByImgClick: true,
@@ -257,10 +257,10 @@ jQuery(function() {
 			    },
 			    
 			    image: {
-			    	tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-			    	// titleSrc: function(item) {
-			    	// 	return $('#'+item.el.attr('data-caption')+'').clone().removeAttr('id');
-			     //  }
+			    	tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			    	titleSrc: function(item) {
+			    		return $('#'+item.el.attr('data-caption')+'').clone().removeAttr('id');
+			      }
 			    }
 			  });
 			});
