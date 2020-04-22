@@ -127,7 +127,10 @@ jQuery(function() {
 					dots: true,
 					fade: true,
 					speed: 600,
-					arrows: true
+					arrows: true,
+					draggable: false,
+					swipe: false,
+					touchMove: false
 				});
 				
 			}
@@ -267,15 +270,18 @@ jQuery(function() {
 		//end photo-popups
 
 		//video-popups
-			$('.video-previw').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				mainClass: 'mfp-fade',
-				removalDelay: 160,
-				preloader: false,
+			if($('.video-previw').length > 0){
+				$('.video-previw').magnificPopup({
+					disableOn: 700,
+					type: 'iframe',
+					mainClass: 'mfp-fade',
+					removalDelay: 160,
+					preloader: false,
 
-				fixedContentPos: false
-			});
+					fixedContentPos: false
+				});
+				
+			}
 		//end video-popups
 
 		//articles-popups
