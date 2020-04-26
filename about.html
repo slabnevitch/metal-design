@@ -22,14 +22,18 @@
           </div>
           <div class="header-right">
             <ul class="header-menu">
-              <li class="header-menu__item active"><a href="about.html" title="О нас">О нас</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="МАФЫ">МАФЫ</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="БМЗ">БМЗ</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="Металлоконструкции">Металлоконструкции</a></li>
+              <li class="header-menu__item active"><a href="catalog.html" title="О нас">О нас</a></li>
               <li class="header-menu__item"><a href="services.html" title="Услуги">Услуги</a></li>
-              <li class="header-menu__item tooltipsted"><span title="Контакты" class="header-menu__link-span">Контакты
+              <li class="header-menu__item tooltipsted header-contacts"><span title="Контакты" class="header-menu__link-span">Контакты
                       <svg class="icon icon-arrow-down ">
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-down"></use>
                       </svg></span>
                 <div class="header-popup header-contacts-popup">
                   <div class="contacts-popup__top">
+                    <div class="header-logo-text">Проектирование, производство и монтаж МАФ, БМЗ и металлоконструкций любой сложности в Украине</div>
                     <div class="header-popup__title">Metal design corp.
                       <div>WINGS of DESIGN</div>
                     </div>
@@ -50,8 +54,16 @@
                             </svg></a></li>
                   </ul>
                   <div class="contacts-popup__bottom">
-                    <div class="header-popup__tels"><a href="tel:+38063256613">+38 063 256-56-13 </a><a href="tel:+38093795-986">+38 093 795-29-86</a></div>
-                    <div class="header-popup__mail"><a href="mailto:info@design-wings.com">info@design-wings.com</a><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></div>
+                    <div class="contacts-popup__requisites">
+                      <div class="header-popup__tels">
+                        <p><a href="tel:+38063256613">+38 063 256-56-13 </a></p>
+                        <p><a href="tel:+38093795-986">+38 093 795-29-86</a></p>
+                      </div>
+                      <div class="header-popup__mail">
+                        <p><a href="mailto:info@design-wings.com">info@design-wings.com</a></p>
+                        <p><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></p>
+                      </div>
+                    </div>
                     <ul class="md-socials">
                       <li><a href="#">
                               <svg class="icon icon-fb ">
@@ -84,42 +96,42 @@
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
                       </svg></a>
               </li>
-              <li class="header-menu__item tooltipsted header-favourites"><a href="favorites.html"><span class="header-menu__hidden-text">Избранное</span><span class="header-menu__star"></span>
-                  <div class="md-favorites-name"><span>Александр 77</span></div></a>
-                <div class="header-popup header-enter-popup">
-                  <div class="header-popup__title">Войдите <br>или зарегистрируйтесь</div>
-                  <form action="#" class="md-form header-enter-popup__start">
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Телефон">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Пароль">
-                    </label>
-                    <label class="md-form-label-check">
-                      <input type="checkbox" name=""><span class="false-check"></span>
-                      <spam class="check-text">Запомните меня</spam>
-                    </label>
-                    <button class="button button-white">Войти</button><a href="#" id="reg-button" class="button">Зарегистрироваться</a><a href="#" class="pass-forgot">Забыли пароль?</a>
-                  </form>
-                  <form action="#" class="md-form header-enter-popup__reg">
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Имя">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Телефон">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Электропочта">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Пароль">
-                    </label>
-                    <button class="button button-white">Зарегистрироваться</button><a href="#" id="enter-button" class="enter">Войти</a>
-                  </form>
-                </div>
-              </li>
+              <li class="header-menu__item tooltipsted header-favourites"><a href="favorites.html" class="header-menu__hidden-text">Избранное</a><span class="header-menu__star"></span></li>
             </ul>
+            <div class="md-favorites-name"><span>Александр 77</span></div>
             <div class="header-burger"></div>
+          </div>
+          <div class="header-popup header-enter-popup">
+            <div class="enter-popup-mob-link"><a href="favorites.html" class="header-menu__hidden-text">Избранное</a><span class="header-menu__star"></span></div>
+            <div class="header-popup__title">Войдите <br>или зарегистрируйтесь</div>
+            <form action="#" class="md-form header-enter-popup__start">
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Телефон">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Пароль">
+              </label>
+              <label class="md-form-label-check">
+                <input type="checkbox" name=""><span class="false-check"></span>
+                <spam class="check-text">Запомните меня</spam>
+              </label>
+              <button class="button button-white">Войти</button><a href="#" id="reg-button" class="button">Зарегистрироваться</a><a href="#" class="pass-forgot">Забыли пароль?</a>
+            </form>
+            <form action="#" class="md-form header-enter-popup__reg">
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Имя">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Телефон">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Электропочта">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Пароль">
+              </label>
+              <button class="button button-white">Зарегистрироваться</button><a href="#" id="enter-button" class="enter">Войти</a>
+            </form>
           </div>
         </div>
       </div>
@@ -127,7 +139,7 @@
     <div class="md-cover"></div>
     <div class="md-about">
       <section style="background-image: url(img/about-page/about-visual.jpg)" class="page-visual">
-        <div class="wrapper">
+        <div class="wrapper heading-wrapper">
           <div class="md-breadcrumbs">
             <ul>
               <li><a href="#">
@@ -171,7 +183,7 @@
           <div class="decisions-slide__top">
             <div class="decisions-slide__title">Опыт 		</div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper about-experience__col-wrap">
             <div class="about-experiences__column">
               <p class="md-pargf">Если Вы еще не определись с внешним видом вашего будущего торгового павильона, то вы сможете заказать понравившийся вариант из нашего каталога</p>
             </div>
@@ -186,14 +198,10 @@
             </div>
           </div>
         </div>
-        <div class="static-gallery">
-          <div class="wrapper"><a href="img/static-gallery/1.jpg" data-caption="mafs-caption-5" class="static-gallery__item from-photo-popup"><img src="img/static-gallery/1.jpg" alt="alt"></a><a href="img/static-gallery/2.jpg" data-caption="mafs-caption-6" class="static-gallery__item from-photo-popup"><img src="img/static-gallery/2.jpg" alt="alt"></a><a href="img/static-gallery/3.jpg" data-caption="mafs-caption-7" class="static-gallery__item from-photo-popup"><img src="img/static-gallery/3.jpg" alt="alt"></a><a href="img/static-gallery/4.jpg" data-caption="mafs-caption-8" class="static-gallery__item from-photo-popup"><img src="img/static-gallery/4.jpg" alt="alt"></a>
-          </div>
-        </div>
         <div class="about-interior">
           <div class="wrapper">
             <div class="about-interior__top">
-              <div class="md-headline">— Создание интерьера всегда начинается с планирования <br>и разделения помещений на зоны.<br><span>Нашей задачей было сделать так, <br>чтобы было удобно и сотрудникам заведения, и клиентам.</span></div>
+              <div class="md-headline">— Создание интерьера всегда начинается с планирования <br>и разделения помещений на зоны. <br><span>Нашей задачей было сделать так, <br>чтобы было удобно и сотрудникам заведения, и клиентам.</span></div>
             </div>
             <div class="about-interior__bottom">
               <p class="md-pargf">Под аббревиатуру “МАФ” попадают совершенно разные по типу и назначению объекты. Это могут быть: посты охраны, вагончики и бытовки для строителей, киоски, павильоны, остановочные комплексы, дачные домики, отделы продаж и многое другое. Сооружения этой группы подходят для бизнеса и жилья. Конструкция здания с использованием металлического каркаса, не зависит от природных процессов, монтируется в любое время года и в очень быстрые сроки, таким зданиям пододит облегченный фундамент.</p><img src="img/about-page/interior1.jpg" alt="alt" class="int-1"><img src="img/about-page/interior2.png" alt="alt" class="int-2">
@@ -207,6 +215,20 @@
             <h3>ПРОИЗВОДСТВО</h3>
             <div class="about-production__block">
               <div style="background-image: url(img/cards/b003.jpg)" class="about-production__img"></div>
+            </div>
+            <div class="about-production__features">
+              <div class="about-production__feature">
+                <div class="md-empty-num">01</div>
+                <p class="md-pargf">Под аббревиатуру “МАФ” попадают совершенно разные по типу и назначению объекты. Это могут быть: посты охраны, вагончики и бытовки</p>
+              </div>
+              <div class="about-production__feature">
+                <div class="md-empty-num">02</div>
+                <p class="md-pargf">Под аббревиатуру “МАФ” попадают совершенно разные по типу и назначению объекты. Это могут быть: посты охраны, вагончики и бытовки</p>
+              </div>
+              <div class="about-production__feature">
+                <div class="md-empty-num">03</div>
+                <p class="md-pargf">Под аббревиатуру “МАФ” попадают совершенно разные по типу и назначению объекты. Это могут быть: посты охраны, вагончики и бытовки</p>
+              </div>
             </div>
           </div>
           <div class="about-production__right">
@@ -222,7 +244,7 @@
         </div>
       </div>
       <section class="why-only the-best">
-        <div class="wrapper">
+        <div class="wrapper pag">
           <div class="why-only__block">
             <h3>Мы лучшие!</h3>
             <p class="md-pargf">Под аббревиатуру “МАФ” попадают совершенно разные по типу и назначению объекты. Это могут быть: посты охраны, вагончики и бытовки для строителей, киоски, павильоны, остановочные комплексы, дачные домики, отделы продаж и многое другое. Сооружения этой группы подходят для бизнеса и жилья. Конструкция здания с использованием металлического каркаса, не зависит от природных процессов, монтируется в любое время года и в очень быстрые сроки, таким зданиям пододит облегченный фундамент. Под аббревиатуру “МАФ” попадают совершенно разные по типу и назначению объекты. Это могут быть: посты охраны, вагончики и бытовки для строителей, киоски, павильоны, остановочные комплексы, дачные домики, отделы продаж и многое другое. Сооружения этой группы подходят для бизнеса и жилья. Конструкция здания с использованием металлического каркаса, не зависит от природных процессов, монтируется в любое время года и в очень быстрые сроки, таким зданиям пододит облегченный фундамент.</p>
@@ -249,15 +271,18 @@
                       </svg></a></li>
             </ul>
             <div class="footer-contacts__column">
-              <div class="footer-phones"><a href="tel:+380632565613">	+38 063 256-56-13</a><a href="tel:+380937952986">+38 093 795-29-86 </a></div>
+              <div class="footer-phones">
+                <p><a href="tel:+380632565613">	+38 063 256-56-13</a></p>
+                <p><a href="tel:+380937952986">+38 093 795-29-86 </a></p>
+              </div>
               <div class="footer-mail">
                 <p><a href="mailto:info@design-wings.com">info@design-wings.com</a></p>
                 <p><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></p>
               </div>
             </div>
             <ul class="footer-menu">
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="about.html">О нас</a></li>
+              <li><a href="services.html" title="Услуги">Услуги</a></li>
+              <li><a href="about.html" title="О нас">О нас</a></li>
             </ul>
           </div>
           <div class="footer-socials">

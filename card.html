@@ -22,14 +22,18 @@
           </div>
           <div class="header-right">
             <ul class="header-menu">
-              <li class="header-menu__item active"><a href="about.html" title="О нас">О нас</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="МАФЫ">МАФЫ</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="БМЗ">БМЗ</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="Металлоконструкции">Металлоконструкции</a></li>
+              <li class="header-menu__item active"><a href="catalog.html" title="О нас">О нас</a></li>
               <li class="header-menu__item"><a href="services.html" title="Услуги">Услуги</a></li>
-              <li class="header-menu__item tooltipsted"><span title="Контакты" class="header-menu__link-span">Контакты
+              <li class="header-menu__item tooltipsted header-contacts"><span title="Контакты" class="header-menu__link-span">Контакты
                       <svg class="icon icon-arrow-down ">
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-down"></use>
                       </svg></span>
                 <div class="header-popup header-contacts-popup">
                   <div class="contacts-popup__top">
+                    <div class="header-logo-text">Проектирование, производство и монтаж МАФ, БМЗ и металлоконструкций любой сложности в Украине</div>
                     <div class="header-popup__title">Metal design corp.
                       <div>WINGS of DESIGN</div>
                     </div>
@@ -50,8 +54,16 @@
                             </svg></a></li>
                   </ul>
                   <div class="contacts-popup__bottom">
-                    <div class="header-popup__tels"><a href="tel:+38063256613">+38 063 256-56-13 </a><a href="tel:+38093795-986">+38 093 795-29-86</a></div>
-                    <div class="header-popup__mail"><a href="mailto:info@design-wings.com">info@design-wings.com</a><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></div>
+                    <div class="contacts-popup__requisites">
+                      <div class="header-popup__tels">
+                        <p><a href="tel:+38063256613">+38 063 256-56-13 </a></p>
+                        <p><a href="tel:+38093795-986">+38 093 795-29-86</a></p>
+                      </div>
+                      <div class="header-popup__mail">
+                        <p><a href="mailto:info@design-wings.com">info@design-wings.com</a></p>
+                        <p><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></p>
+                      </div>
+                    </div>
                     <ul class="md-socials">
                       <li><a href="#">
                               <svg class="icon icon-fb ">
@@ -84,42 +96,42 @@
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
                       </svg></a>
               </li>
-              <li class="header-menu__item tooltipsted header-favourites"><a href="favorites.html"><span class="header-menu__hidden-text">Избранное</span><span class="header-menu__star"></span>
-                  <div class="md-favorites-name"><span>Александр 77</span></div></a>
-                <div class="header-popup header-enter-popup">
-                  <div class="header-popup__title">Войдите <br>или зарегистрируйтесь</div>
-                  <form action="#" class="md-form header-enter-popup__start">
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Телефон">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Пароль">
-                    </label>
-                    <label class="md-form-label-check">
-                      <input type="checkbox" name=""><span class="false-check"></span>
-                      <spam class="check-text">Запомните меня</spam>
-                    </label>
-                    <button class="button button-white">Войти</button><a href="#" id="reg-button" class="button">Зарегистрироваться</a><a href="#" class="pass-forgot">Забыли пароль?</a>
-                  </form>
-                  <form action="#" class="md-form header-enter-popup__reg">
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Имя">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Телефон">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Электропочта">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Пароль">
-                    </label>
-                    <button class="button button-white">Зарегистрироваться</button><a href="#" id="enter-button" class="enter">Войти</a>
-                  </form>
-                </div>
-              </li>
+              <li class="header-menu__item tooltipsted header-favourites"><a href="favorites.html" class="header-menu__hidden-text">Избранное</a><span class="header-menu__star"></span></li>
             </ul>
+            <div class="md-favorites-name"><span>Александр 77</span></div>
             <div class="header-burger"></div>
+          </div>
+          <div class="header-popup header-enter-popup">
+            <div class="enter-popup-mob-link"><a href="favorites.html" class="header-menu__hidden-text">Избранное</a><span class="header-menu__star"></span></div>
+            <div class="header-popup__title">Войдите <br>или зарегистрируйтесь</div>
+            <form action="#" class="md-form header-enter-popup__start">
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Телефон">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Пароль">
+              </label>
+              <label class="md-form-label-check">
+                <input type="checkbox" name=""><span class="false-check"></span>
+                <spam class="check-text">Запомните меня</spam>
+              </label>
+              <button class="button button-white">Войти</button><a href="#" id="reg-button" class="button">Зарегистрироваться</a><a href="#" class="pass-forgot">Забыли пароль?</a>
+            </form>
+            <form action="#" class="md-form header-enter-popup__reg">
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Имя">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Телефон">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Электропочта">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Пароль">
+              </label>
+              <button class="button button-white">Зарегистрироваться</button><a href="#" id="enter-button" class="enter">Войти</a>
+            </form>
           </div>
         </div>
       </div>
@@ -186,14 +198,24 @@
             </div>
             <div class="product-info__order">
               <div class="product-info__column">
-                <div class="product-info__size">Размер 3000х2000</div>
-                <div class="product-info__price">от 90 000 грн</div>
-                <div class="product-info__colors">
-                  <div class="md-prod-colors">
-                    <div style="background-color: #FF7F00" class="md-prod-color"></div>
-                    <div style="background-color: #299717" class="md-prod-color"></div>
-                    <div style="background-color: #FF4D00" class="md-prod-color"></div>
-                  </div><a href="#" class="product-info__colors-link">Все цвета<br>проекта</a>
+                <div class="product-info__price-wrapper">
+                  <div class="product-info__size">Размер 3000х2000</div>
+                  <div class="product-info__price">от 90 000 грн</div>
+                </div>
+                <div class="product-info__colors-wrapper">
+                  <div class="product-info__colors">
+                    <div class="md-prod-colors">
+                      <label>
+                        <input type="radio" name="product-color-select"><span style="background-color: #FF7F00" class="md-prod-color"></span>
+                      </label>
+                      <label>
+                        <input type="radio" name="product-color-select"><span style="background-color: #299717" class="md-prod-color"></span>
+                      </label>
+                      <label>
+                        <input type="radio" name="product-color-select"><span style="background-color: #FF4D00" class="md-prod-color"></span>
+                      </label>
+                    </div><a href="#" class="product-info__colors-link">Все цвета<br>проекта</a>
+                  </div>
                 </div>
               </div>
               <div class="product-info__column"><a href="#" class="button button-accent">Заказать</a>
@@ -1752,15 +1774,18 @@
                       </svg></a></li>
             </ul>
             <div class="footer-contacts__column">
-              <div class="footer-phones"><a href="tel:+380632565613">	+38 063 256-56-13</a><a href="tel:+380937952986">+38 093 795-29-86 </a></div>
+              <div class="footer-phones">
+                <p><a href="tel:+380632565613">	+38 063 256-56-13</a></p>
+                <p><a href="tel:+380937952986">+38 093 795-29-86 </a></p>
+              </div>
               <div class="footer-mail">
                 <p><a href="mailto:info@design-wings.com">info@design-wings.com</a></p>
                 <p><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></p>
               </div>
             </div>
             <ul class="footer-menu">
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="about.html">О нас</a></li>
+              <li><a href="services.html" title="Услуги">Услуги</a></li>
+              <li><a href="about.html" title="О нас">О нас</a></li>
             </ul>
           </div>
           <div class="footer-socials">

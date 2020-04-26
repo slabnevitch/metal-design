@@ -22,14 +22,18 @@
           </div>
           <div class="header-right">
             <ul class="header-menu">
-              <li class="header-menu__item active"><a href="about.html" title="О нас">О нас</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="МАФЫ">МАФЫ</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="БМЗ">БМЗ</a></li>
+              <li class="header-menu__item header-menu__item--mob"><a href="catalog.html" title="Металлоконструкции">Металлоконструкции</a></li>
+              <li class="header-menu__item active"><a href="catalog.html" title="О нас">О нас</a></li>
               <li class="header-menu__item"><a href="services.html" title="Услуги">Услуги</a></li>
-              <li class="header-menu__item tooltipsted"><span title="Контакты" class="header-menu__link-span">Контакты
+              <li class="header-menu__item tooltipsted header-contacts"><span title="Контакты" class="header-menu__link-span">Контакты
                       <svg class="icon icon-arrow-down ">
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-down"></use>
                       </svg></span>
                 <div class="header-popup header-contacts-popup">
                   <div class="contacts-popup__top">
+                    <div class="header-logo-text">Проектирование, производство и монтаж МАФ, БМЗ и металлоконструкций любой сложности в Украине</div>
                     <div class="header-popup__title">Metal design corp.
                       <div>WINGS of DESIGN</div>
                     </div>
@@ -50,8 +54,16 @@
                             </svg></a></li>
                   </ul>
                   <div class="contacts-popup__bottom">
-                    <div class="header-popup__tels"><a href="tel:+38063256613">+38 063 256-56-13 </a><a href="tel:+38093795-986">+38 093 795-29-86</a></div>
-                    <div class="header-popup__mail"><a href="mailto:info@design-wings.com">info@design-wings.com</a><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></div>
+                    <div class="contacts-popup__requisites">
+                      <div class="header-popup__tels">
+                        <p><a href="tel:+38063256613">+38 063 256-56-13 </a></p>
+                        <p><a href="tel:+38093795-986">+38 093 795-29-86</a></p>
+                      </div>
+                      <div class="header-popup__mail">
+                        <p><a href="mailto:info@design-wings.com">info@design-wings.com</a></p>
+                        <p><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></p>
+                      </div>
+                    </div>
                     <ul class="md-socials">
                       <li><a href="#">
                               <svg class="icon icon-fb ">
@@ -84,49 +96,49 @@
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
                       </svg></a>
               </li>
-              <li class="header-menu__item tooltipsted header-favourites"><a href="favorites.html"><span class="header-menu__hidden-text">Избранное</span><span class="header-menu__star"></span>
-                  <div class="md-favorites-name"><span>Александр 77</span></div></a>
-                <div class="header-popup header-enter-popup">
-                  <div class="header-popup__title">Войдите <br>или зарегистрируйтесь</div>
-                  <form action="#" class="md-form header-enter-popup__start">
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Телефон">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Пароль">
-                    </label>
-                    <label class="md-form-label-check">
-                      <input type="checkbox" name=""><span class="false-check"></span>
-                      <spam class="check-text">Запомните меня</spam>
-                    </label>
-                    <button class="button button-white">Войти</button><a href="#" id="reg-button" class="button">Зарегистрироваться</a><a href="#" class="pass-forgot">Забыли пароль?</a>
-                  </form>
-                  <form action="#" class="md-form header-enter-popup__reg">
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Имя">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Телефон">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Электропочта">
-                    </label>
-                    <label class="md-form-label">
-                      <input type="text" name="" placeholder="Пароль">
-                    </label>
-                    <button class="button button-white">Зарегистрироваться</button><a href="#" id="enter-button" class="enter">Войти</a>
-                  </form>
-                </div>
-              </li>
+              <li class="header-menu__item tooltipsted header-favourites"><a href="favorites.html" class="header-menu__hidden-text">Избранное</a><span class="header-menu__star"></span></li>
             </ul>
+            <div class="md-favorites-name"><span>Александр 77</span></div>
             <div class="header-burger"></div>
+          </div>
+          <div class="header-popup header-enter-popup">
+            <div class="enter-popup-mob-link"><a href="favorites.html" class="header-menu__hidden-text">Избранное</a><span class="header-menu__star"></span></div>
+            <div class="header-popup__title">Войдите <br>или зарегистрируйтесь</div>
+            <form action="#" class="md-form header-enter-popup__start">
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Телефон">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Пароль">
+              </label>
+              <label class="md-form-label-check">
+                <input type="checkbox" name=""><span class="false-check"></span>
+                <spam class="check-text">Запомните меня</spam>
+              </label>
+              <button class="button button-white">Войти</button><a href="#" id="reg-button" class="button">Зарегистрироваться</a><a href="#" class="pass-forgot">Забыли пароль?</a>
+            </form>
+            <form action="#" class="md-form header-enter-popup__reg">
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Имя">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Телефон">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Электропочта">
+              </label>
+              <label class="md-form-label">
+                <input type="text" name="" placeholder="Пароль">
+              </label>
+              <button class="button button-white">Зарегистрироваться</button><a href="#" id="enter-button" class="enter">Войти</a>
+            </form>
           </div>
         </div>
       </div>
     </header>
     <div class="md-cover"></div>
     <div class="md-catalog">
-      <div class="wrapper md-catalog__header">
+      <div class="wrapper md-padded-heading">
         <div class="md-breadcrumbs">
           <ul>
             <li><a href="#">
@@ -157,7 +169,8 @@
                   <div class="input-buffer"></div><span>грн</span>
                 </div>
                 <div class="md-range__hadler">
-                  <input type="text" name="" class="maxvalinp"><span>грн</span>
+                  <input type="text" name="" class="maxvalinp">
+                  <div class="input-buffer"></div><span>грн</span>
                 </div>
               </div>
               <div class="md-range__slider"></div>
@@ -169,10 +182,11 @@
               <div class="md-range__hadlers">
                 <div class="md-range__hadler">
                   <input type="text" name="" value="0" class="minvalinp">
-                  <div class="input-buffer"></div><span>грн</span>
+                  <div class="input-buffer"></div><span>м<sup>2</sup></span>
                 </div>
                 <div class="md-range__hadler">
-                  <input type="text" name="" class="maxvalinp"><span>грн</span>
+                  <input type="text" name="" class="maxvalinp">
+                  <div class="input-buffer"></div><span>м<sup>2</sup></span>
                 </div>
               </div>
               <div class="md-range__slider"></div>
@@ -222,7 +236,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Киоск для торговли 3*2 м</div>
+                <div class="md-card__name">Киоск для торговли 3*2 м  1</div>
                 <div class="md-card__model">А001p</div>
               </div>
               <div class="md-card__link">
@@ -275,7 +289,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый Павильон 6*4 м</div>
+                <div class="md-card__name">Торговый Павильон 6*4 м  2</div>
                 <div class="md-card__model">А0176</div>
               </div>
               <div class="md-card__link">
@@ -328,7 +342,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый Модуль 2,5*5 м</div>
+                <div class="md-card__name">Торговый Модуль 2,5*5 м  3</div>
                 <div class="md-card__model">А5вв</div>
               </div>
               <div class="md-card__link">
@@ -381,7 +395,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый Павильон 6*4 м</div>
+                <div class="md-card__name">Торговый Павильон 6*4 м  4</div>
                 <div class="md-card__model">АР98</div>
               </div>
               <div class="md-card__link">
@@ -434,7 +448,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый павильон для остановки</div>
+                <div class="md-card__name">Торговый павильон для остановки  5</div>
                 <div class="md-card__model">C156os</div>
               </div>
               <div class="md-card__link">
@@ -487,7 +501,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Мобильная металлическая</div>
+                <div class="md-card__name">Мобильная металлическая  6</div>
                 <div class="md-card__model">АР-013</div>
               </div>
               <div class="md-card__link">
@@ -540,7 +554,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Остановочный торговый павильон</div>
+                <div class="md-card__name">Остановочный торговый павильон  7</div>
                 <div class="md-card__model">АП-014</div>
               </div>
               <div class="md-card__link">
@@ -593,7 +607,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Киоск для торговли 3*2 м</div>
+                <div class="md-card__name">Киоск для торговли 3*2 м  8</div>
                 <div class="md-card__model">АР-015</div>
               </div>
               <div class="md-card__link">
@@ -648,7 +662,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Киоск для торговли 3*2 м</div>
+                <div class="md-card__name">Киоск для торговли 3*2 м  1</div>
                 <div class="md-card__model">А001p</div>
               </div>
               <div class="md-card__link">
@@ -701,7 +715,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый Павильон 6*4 м</div>
+                <div class="md-card__name">Торговый Павильон 6*4 м  2</div>
                 <div class="md-card__model">А0176</div>
               </div>
               <div class="md-card__link">
@@ -754,7 +768,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый Модуль 2,5*5 м</div>
+                <div class="md-card__name">Торговый Модуль 2,5*5 м  3</div>
                 <div class="md-card__model">А5вв</div>
               </div>
               <div class="md-card__link">
@@ -807,7 +821,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый Павильон 6*4 м</div>
+                <div class="md-card__name">Торговый Павильон 6*4 м  4</div>
                 <div class="md-card__model">АР98</div>
               </div>
               <div class="md-card__link">
@@ -860,7 +874,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Торговый павильон для остановки</div>
+                <div class="md-card__name">Торговый павильон для остановки  5</div>
                 <div class="md-card__model">C156os</div>
               </div>
               <div class="md-card__link">
@@ -913,7 +927,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Мобильная металлическая</div>
+                <div class="md-card__name">Мобильная металлическая  6</div>
                 <div class="md-card__model">АР-013</div>
               </div>
               <div class="md-card__link">
@@ -966,7 +980,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Остановочный торговый павильон</div>
+                <div class="md-card__name">Остановочный торговый павильон  7</div>
                 <div class="md-card__model">АП-014</div>
               </div>
               <div class="md-card__link">
@@ -1019,7 +1033,7 @@
           <div class="md-card__bottom">
             <div class="md-card__short">
               <div class="md-card__title">
-                <div class="md-card__name">Киоск для торговли 3*2 м</div>
+                <div class="md-card__name">Киоск для торговли 3*2 м  8</div>
                 <div class="md-card__model">АР-015</div>
               </div>
               <div class="md-card__link">
@@ -1172,15 +1186,6 @@
         </div>
       </div>
     </section>
-    <section class="design-order">
-      <div class="wrapper">
-        <div class="design-order-title">
-          <div>Не нашли <br>подходящую модель? </div>закажите дизайн проект
-        </div>
-        <div class="design-order-button"><a href="#" class="button button-accent">Заказать!</a></div>
-      </div>
-      <div class="design-order-bottom"></div>
-    </section>
     <div class="photo-captions">
       <div id="mafs-caption-1" class="photo-slider-caption">
         <div class="photo-slider-caption__title">Киоск для торговли 3*2 м. АР-015 ---- 1</div>
@@ -1303,15 +1308,18 @@
                       </svg></a></li>
             </ul>
             <div class="footer-contacts__column">
-              <div class="footer-phones"><a href="tel:+380632565613">	+38 063 256-56-13</a><a href="tel:+380937952986">+38 093 795-29-86 </a></div>
+              <div class="footer-phones">
+                <p><a href="tel:+380632565613">	+38 063 256-56-13</a></p>
+                <p><a href="tel:+380937952986">+38 093 795-29-86 </a></p>
+              </div>
               <div class="footer-mail">
                 <p><a href="mailto:info@design-wings.com">info@design-wings.com</a></p>
                 <p><a href="mailto:contact@design-wings.com">contact@design-wings.com</a></p>
               </div>
             </div>
             <ul class="footer-menu">
-              <li><a href="services.html">Услуги</a></li>
-              <li><a href="about.html">О нас</a></li>
+              <li><a href="services.html" title="Услуги">Услуги</a></li>
+              <li><a href="about.html" title="О нас">О нас</a></li>
             </ul>
           </div>
           <div class="footer-socials">
