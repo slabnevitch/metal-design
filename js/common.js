@@ -1,5 +1,38 @@
 jQuery(function() {
 	jQuery(document).ready(function() {
+		if($('.video-previw').length > 0){
+			var players = Plyr.setup('.plyr__video-embed', {
+			  controls: [],
+			  muted: true,
+			  speed: { selected: 2 }
+			});
+
+			var videos = document.querySelectorAll('.plyr__video-embed'),
+				waypointsArr = [];
+			
+			[].forEach.call(videos, function(elem){
+				var waypoint = new Waypoint({
+					element: elem,
+					offset: '50%',
+					handler: function() {
+						console.log('Basic waypoint triggered');
+						var index = (waypointsArr).indexOf(this),
+							$parent = $(this.element).closest('.video-previw');
+
+						$parent.addClass('now-played');
+						
+						players[index].play();
+						setTimeout(function(){
+							players[index].stop();
+							$parent.removeClass('now-played');
+						}, 6000);
+						console.log(this.element);
+					}
+				});
+				waypointsArr.push(waypoint);
+			});
+		}
+
 
 		function headerHandler() {
 			var _self = this,
