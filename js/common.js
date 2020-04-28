@@ -16,7 +16,7 @@ jQuery(function() {
 					offset: '50%',
 					handler: function() {
 						console.log('Basic waypoint triggered');
-						var index = (waypointsArr).indexOf(this),
+						var index = waypointsArr.indexOf(this),
 							$parent = $(this.element).closest('.video-previw');
 
 						$parent.addClass('now-played');
