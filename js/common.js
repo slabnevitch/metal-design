@@ -1,6 +1,6 @@
 jQuery(function() {
 	jQuery(document).ready(function() {
-		if($('.video-previw').length > 0){
+		if($('.plyr__video-embed').length > 0){
 			var players = Plyr.setup('.plyr__video-embed', {
 			  controls: [],
 			  muted: true,
