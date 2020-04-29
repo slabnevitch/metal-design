@@ -283,6 +283,7 @@ jQuery(function() {
 						{
 							breakpoint: 577,
 							settings: {
+								rows: 4,
 								slidesPerRow: 1
 							}	
 						}
