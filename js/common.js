@@ -1,6 +1,14 @@
 jQuery(function() {
 	jQuery(document).ready(function() {
-		if($('.plyr__video-embed').length > 0){
+		var isMobile = {
+			Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
+			BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
+			iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
+			Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
+			any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
+		};
+
+		if($('.plyr__video-embed').length > 0 && !isMobile.any()){
 			var players = Plyr.setup('.plyr__video-embed', {
 			  controls: [],
 			  muted: true,
@@ -15,7 +23,6 @@ jQuery(function() {
 					element: elem,
 					offset: '50%',
 					handler: function() {
-						console.log('Basic waypoint triggered');
 						var index = waypointsArr.indexOf(this),
 							$parent = $(this.element).closest('.video-previw');
 
@@ -26,7 +33,6 @@ jQuery(function() {
 							players[index].stop();
 							$parent.removeClass('now-played');
 						}, 6000);
-						console.log(this.element);
 					}
 				});
 				waypointsArr.push(waypoint);
@@ -73,7 +79,6 @@ jQuery(function() {
 
 			},
 			this.coverClick = function() {
-				console.log('cover click');
 				$html.removeClass('header-expanded');
 			},
 			this.favouritesClick = function(e) {
@@ -103,7 +108,6 @@ jQuery(function() {
 				return false;
 			},
 			this.bodyClick = function() {
-				console.log('body click');
 				_self.coverHide(); 
 				_self.searchHide(); 
 				_self.closeAllHeaderPopups();
@@ -298,9 +302,8 @@ jQuery(function() {
 						$slider = $th.find('.chapter-photos__slider');
 
 					$($slider).on('lazyLoaded', function (e, slick, image, imageSource) {
-						console.log('lazy');
 					 	image.parent().css('background-image', 'url("' + imageSource + '")');
-					  image.hide(); 
+					  	image.hide(); 
 					});
 
 					$($slider).slick({
@@ -460,7 +463,6 @@ jQuery(function() {
 			$('.cards-slider__card-wrap .md-card').hover(function() {
 				$(this).closest('.cards-slider')
 					.addClass('up-on-stack');
-					console.log('card-hover');
 			}, 
 			function() {
 				$(this).closest('.cards-slider')
@@ -482,7 +484,6 @@ jQuery(function() {
 				});
 
 				$(window).resize(function() {
-					console.log('doc resize');
 					scrollArr.forEach(function(elem) {
 						elem.reinitialise();	
 
@@ -502,7 +503,6 @@ jQuery(function() {
 					readySlidersArr = [];
 
 				this.init = function() {
-					console.log('init');
 					this.slidersInit();
 					$(sliders).find('.minvalinp').on('change', this.minValType);
 					$(sliders).find('.maxvalinp').on('change', this.maxValType);
@@ -516,7 +516,6 @@ jQuery(function() {
 				this.synchBuffer = function($input) {
 					var $buffer = $input.next('.input-buffer');
 						
-					// console.log($that);
 					$buffer.text($input.val());
 					$input.width($buffer.width() + 1);
 				},
@@ -524,12 +523,12 @@ jQuery(function() {
 					_self.synchBuffer($(this));
 				}
 				this.slidersInit = function() {
-					sliders.forEach(function(elem,i ) {
-						var slider = elem.querySelector('.md-range__slider'),
-							startValue = +elem.getAttribute('data-startval'),
-							endValue = +elem.getAttribute('data-endval'),
-							minValue = +elem.getAttribute('data-minval'),
-							maxValue = +elem.getAttribute('data-maxval');
+					for(var i = 0; i<sliders.length; i++) {
+						var slider = sliders[i].querySelector('.md-range__slider'),
+							startValue = +sliders[i].getAttribute('data-startval'),
+							endValue = +sliders[i].getAttribute('data-endval'),
+							minValue = +sliders[i].getAttribute('data-minval'),
+							maxValue = +sliders[i].getAttribute('data-maxval');
 						
 						var noUi = noUiSlider.create(slider, {
 							connect: true,
@@ -547,15 +546,15 @@ jQuery(function() {
 						});
 
 						readySlidersArr.push(noUi);
-						$(elem).find('.minvalinp').val(format.to(startValue));
+						$(sliders[i]).find('.minvalinp').val(format.to(startValue));
 
-						_self.synchBuffer($(elem).find('.minvalinp'));
+						_self.synchBuffer($(sliders[i]).find('.minvalinp'));
 
-						$(elem).find('.maxvalinp').val(format.to(endValue));
+						$(sliders[i]).find('.maxvalinp').val(format.to(endValue));
 
 						slider.noUiSlider.on('change', _self.sliderChange);
 						
-					});
+					}
 
 				},
 				this.minValType = function(e) {
@@ -641,11 +640,7 @@ jQuery(function() {
 			   $catTiles.masonry('layout');
 			 });
 
-			// function onLayout() {
-			//  	console.log('layout done');
-			//  }
-			//  $catTiles.on( 'layoutComplete', onLayout );
-		}
+ 		}
 		// end masonry
 
 		// timer
