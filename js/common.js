@@ -38,8 +38,31 @@ jQuery(function() {
 				waypointsArr.push(waypoint);
 			});
 		}
+		
+		//scroll to-top
+			var toTopIsClicked = 0;
+			$('#md-to-page-top').click(function() {
+				$('html, body').animate({scrollTop: 0}, 1000);
 
+				// var $th = $(this);
 
+				// console.log(toTopIsClicked);
+				
+				// if(toTopIsClicked == 0){
+				// 	toTopIsClicked = 1;
+				// 	$th.addClass('active')
+				// 	return;
+				// }else{
+				// 	$('html, body').animate({scrollTop: 0}, 1000, function() {
+				// 		toTopIsClicked = 0;
+				// 		$th.removeClass('active');
+				// 	});
+					
+				// }
+
+			}); 
+		//end scroll to-top 
+		
 		function headerHandler() {
 			var _self = this,
 					$searchField = $('.header-search__label'),
@@ -357,6 +380,26 @@ jQuery(function() {
 			}
 
 		// end photo-slider
+
+		// callback popup
+			$('.to-popup').magnificPopup({
+				type: 'inline',
+				preloader: false,
+				focus: '#name',
+
+			// When elemened is focused, some mobile browsers in some cases zoom in
+			// It looks not nice, so we disable it:
+			callbacks: {
+				beforeOpen: function() {
+					if($(window).width() < 700) {
+						this.st.focus = false;
+					} else {
+						this.st.focus = '#name';
+					}
+				}
+			}
+		});
+		// end callback popup
 
 		// photo-popups
 			$('.chapter-photos__slider, .decisions-slider').each(function(i, item) {

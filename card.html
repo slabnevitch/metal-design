@@ -350,7 +350,7 @@
                   <div class="md-temer__label">секунд:</div>
                   <div id="sec-field" class="md-timer__field md-empty-num">0</div>
                 </div>
-              </div><a href="#" class="button button-accent">Узнать подробнее </a>
+              </div><a href="#callback-popup" class="button button-accent to-popup">Узнать подробнее </a>
             </div>
           </div>
         </div>
@@ -1665,7 +1665,7 @@
         <div class="design-order-title">
           <div>Не нашли <br>подходящую модель? </div>закажите дизайн проект
         </div>
-        <div class="design-order-button"><a href="#" class="button button-accent">Заказать!</a></div>
+        <div class="design-order-button"><a href="#callback-popup" class="button button-accent to-popup">Заказать!</a></div>
       </div>
       <div class="design-order-bottom"></div>
     </section>
@@ -1855,13 +1855,35 @@
         </div>
       </div>
     </footer>
+    <div id="md-to-page-top" class="md-arrow-rounded md-to-page-top">
+          <svg class="icon icon-arrow-left ">
+            <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-left"></use>
+          </svg>
+    </div>
+    <div id="callback-popup" class="md-callback-popup mfp-hide">
+      <div class="callback-popup-title">Оставьте заявку!</div>
+      <form action="#" class="md-form header-enter-popup__start">
+        <label class="md-form-label">
+          <input type="text" name="" placeholder="Имя">
+        </label>
+        <label class="md-form-label">
+          <input type="text" name="" placeholder="Телефон">
+        </label>
+        <label class="md-form-label">
+          <input type="text" name="" placeholder="Електропочта">
+        </label>
+        <label class="md-form-label">
+          <textarea name="" placeholder="Ваш текст"></textarea>
+        </label>
+        <button class="button button-white">Отправить </button>
+      </form>
+    </div>
     <script src="js/libs/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/libs/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
-    <script src="js/libs/slick/slick.min.js"></script>
     <script src="js/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
     <script src="js/libs/jsscrollpane/js/jquery.mousewheel.js"></script>
     <script src="js/libs/jsscrollpane/js/jquery.jscrollpane.min.js"></script>
-    <script src="js/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="js/libs/jquery-cookie/jquery.cookie.min.js"></script>
     <script src="js/libs/plyr/dist/plyr.polyfilled.min.js"></script>
     <script src="js/libs/waypoints/waypoints.min.js"></script>

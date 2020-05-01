@@ -5332,6 +5332,16 @@ a.plyr__control::before {
   width: 1.08333em;
 }
 
+.icon-star-filled-accent {
+  font-size: 2.4rem;
+  width: 1.08333em;
+}
+
+.icon-star-filled-gray {
+  font-size: 2.4rem;
+  width: 1.08333em;
+}
+
 .icon-telegram {
   font-size: 3.5rem;
   width: 1em;
@@ -5783,8 +5793,9 @@ h3 {
   display: block;
 }
 
-.md-form .md-form-label input {
-  padding: 10px 27px;
+.md-form .md-form-label input,
+.md-form .md-form-label textarea {
+  padding: 12px 27px;
   display: block;
   width: 100%;
   border: none;
@@ -5798,22 +5809,54 @@ h3 {
   font-family: "MontserratRegular", sans-serif;
 }
 
-.md-form .md-form-label input::-webkit-input-placeholder {
-  color: #fff;
+.md-form .md-form-label input::-webkit-input-placeholder,
+.md-form .md-form-label textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
 }
 
-.md-form .md-form-label input::-moz-placeholder {
-  color: #fff;
+.md-form .md-form-label input::-moz-placeholder,
+.md-form .md-form-label textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
   opacity: 1;
 }
 
-.md-form .md-form-label input:-moz-placeholder {
-  color: #fff;
+.md-form .md-form-label input:-moz-placeholder,
+.md-form .md-form-label textarea:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
   opacity: 1;
 }
 
-.md-form .md-form-label input:-ms-input-placeholder {
-  color: #fff;
+.md-form .md-form-label input:-ms-input-placeholder,
+.md-form .md-form-label textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+  opacity: 1;
+}
+
+.md-form .md-form-label textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 212px;
+  min-height: 212px;
+  max-height: 212px;
+}
+
+.md-form .md-form-label textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.md-form .md-form-label textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+  opacity: 1;
+}
+
+.md-form .md-form-label textarea:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+  opacity: 1;
+}
+
+.md-form .md-form-label textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
   opacity: 1;
 }
 
@@ -5894,7 +5937,7 @@ h3 {
   border: none;
   color: #fff;
   text-decoration: none;
-  padding: 10px 27px;
+  padding: 14px 27px;
   font-size: 18px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
@@ -6207,6 +6250,60 @@ h3 {
 
 .scrollpane-padded {
   padding-right: 30px;
+}
+
+.md-to-page-top {
+  position: fixed;
+  top: auto;
+  bottom: -12px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99;
+  border: none;
+  cursor: pointer;
+  background-color: #FF7F00;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.md-to-page-top .icon {
+  font-size: 11px;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  color: #fff;
+}
+
+.md-to-page-top:hover,
+.md-to-page-top:active {
+  background-color: #FF7F00;
+  bottom: 5px;
+}
+
+.md-callback-popup {
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 36px 36px 41px;
+  max-width: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF7F00), to(#FF7F00));
+  background: -webkit-linear-gradient(top, #FF7F00 0%, #FF7F00 100%);
+  background: linear-gradient(180deg, #FF7F00 0%, #FF7F00 100%);
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.md-callback-popup .md-form .button {
+  margin-bottom: 0;
+}
+
+.callback-popup-title {
+  margin-bottom: 26px;
+  font-size: 24px;
+  line-height: 150%;
+  font-family: "MontserratBold", sans-serif;
+  text-align: center;
+  color: #101010;
 }
 
 ul,
