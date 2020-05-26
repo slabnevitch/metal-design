@@ -306,7 +306,7 @@ jQuery(function() {
 						{
 							breakpoint: 577,
 							settings: {
-								rows: 4,
+								rows: 1,
 								slidesPerRow: 1
 							}	
 						}
@@ -839,7 +839,7 @@ jQuery(function() {
 				asNavFor: '.product-nav'
 			});
 			$('.product-nav').slick({
-				slidesToShow: 4,
+				slidesToShow: 8,
 	  			slidesToScroll: 1,
 	  			lazyLoad: 'ondemand',
 				asNavFor: '.product-view',
@@ -850,16 +850,23 @@ jQuery(function() {
 				responsive: [
 		
 					{
+						breakpoint: 1461,
+						settings: {
+							
+							slidesToShow: 7,
+						}	
+					},
+					{
 						breakpoint: 1201,
 						settings: {
 							
-							slidesToShow: 3,
+							slidesToShow: 6,
 						}	
 					},
 					{
 						breakpoint: 993,
 						settings: {
-							slidesToShow: 4,
+							slidesToShow: 5,
 
 						}	
 					},
