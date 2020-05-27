@@ -173,7 +173,7 @@ jQuery(function() {
 			},
 
 			this.winScroll = function() {
-				if($(this).scrollTop() > headerHeight){
+				if($(this).scrollTop() > 20){
 					$html.addClass('header-scroll');
 				}else{
 					$html.removeClass('header-scroll');
