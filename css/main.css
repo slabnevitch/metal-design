@@ -5433,7 +5433,6 @@ html.header-scroll.header-expanded {
 }
 
 html.header-expanded .header-burger {
-  margin-top: 0;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -6407,7 +6406,7 @@ li {
 
 .header-burger {
   display: none;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-left: auto;
   margin-right: 10px;
   width: 43px;
@@ -6745,8 +6744,9 @@ li {
 .header-contacts-popup .md-socials--vert {
   margin-top: 0;
   position: absolute;
-  bottom: 160px;
+  bottom: auto;
   left: 30px;
+  top: 290px;
 }
 
 .header-contacts-popup .md-socials li a:hover .icon {
@@ -6778,6 +6778,10 @@ li {
   color: #fff;
 }
 
+.header-popup__mail {
+  margin-top: -5px;
+}
+
 .header-popup__tels,
 .header-popup__addr {
   font-family: "MontserratBold", sans-serif;
@@ -6788,17 +6792,13 @@ li {
   margin-bottom: 30px;
 }
 
-.header-popup__tels {
-  margin-bottom: 8px;
-}
-
 .header-popup__tels p {
   margin: 0;
 }
 
 .header-popup__tels a {
   display: inline-block;
-  margin-bottom: 27px;
+  margin-bottom: 36px;
 }
 
 .header-popup__mail p {
@@ -9583,6 +9583,7 @@ button.mfp-arrow:after {
   position: absolute;
   top: 0;
   right: 102px;
+  z-index: 1;
 }
 
 .about-history__right .video-previw {
@@ -11494,10 +11495,6 @@ button.mfp-arrow:after {
     margin-right: 0;
   }
 
-  .header-burger {
-    margin-top: -5px;
-  }
-
   html.header-expanded .header-menu__item > a .icon-magnifier {
     top: 0;
     position: static;
@@ -12719,7 +12716,7 @@ button.mfp-arrow:after {
 
   html.header-expanded .header-langs {
     left: -25px;
-    bottom: 0;
+    bottom: 10px;
     top: auto;
   }
 
