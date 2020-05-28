@@ -124,6 +124,7 @@ jQuery(function() {
 			}
 			this.searchClick = function(e) {
 				e.stopPropagation();
+				$cover.css('top', $header.outerHeight() + 'px');
 				_self.coverShow();
 				_self.searchShow();
 
@@ -146,6 +147,7 @@ jQuery(function() {
 			},
 			this.coverShow = function() {
 				$html.addClass('cover-in');
+
 			},
 			this.coverHide = function() {
 				$html.removeClass('cover-in');

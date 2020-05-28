@@ -6656,6 +6656,10 @@ li {
   display: none;
 }
 
+.header-main {
+  height: auto;
+}
+
 .header-main .wrapper {
   padding-top: 16px;
   padding-bottom: 11px;
@@ -10193,6 +10197,10 @@ button.mfp-arrow:after {
     font-size: 13px;
   }
 
+  .header-contacts-popup .md-socials--vert {
+    top: auto;
+  }
+
   .wrapper {
     max-width: 1200px;
   }
@@ -10203,7 +10211,6 @@ button.mfp-arrow:after {
 
   .header {
     padding-top: 30px;
-    height: 110px;
   }
 
   .header-logo {
