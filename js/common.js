@@ -428,6 +428,7 @@ jQuery(function() {
 					type: 'image',
 					tLoading: 'Loading image #%curr%...',
 					mainClass: 'mfp-img-mobile mfp-with-caption',
+					fixedContentPos: false,
 					gallery: {
 						enabled: true,
 						navigateByImgClick: true,
@@ -476,6 +477,7 @@ jQuery(function() {
 					type: 'image',
 					tLoading: 'Loading image #%curr%...',
 					mainClass: 'mfp-img-mobile md-articles-popup mfp-with-caption',
+					fixedContentPos: false,
 					gallery: {
 						enabled: true,
 						navigateByImgClick: true,
